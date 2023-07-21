@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.assignment.Utilities.Listeners"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="D:/Assignments/Home-SeleniumAssignment/SeleniumAssignment">
+        <classes>
+
+            <class name="com.assignment.TestCases.InvalidLogin">
+                <methods>
+                    <include name="invalidLoginTest"/>
+                </methods>
+            </class>
+            <class name="com.assignment.TestCases.Login">
+                <methods>
+                    <include name="login"/>
+                </methods>
+            </class>
+            <class name="com.assignment.TestCases.ProductCategory">
+                <methods>
+                    <include name="selectProductCategory"/>
+                </methods>
+            </class>
+
+            <class name="com.assignment.TestCases.SignOut">
+            </class>
+            
+        </classes>
+    </test>
+</suite>
